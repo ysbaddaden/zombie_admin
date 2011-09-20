@@ -2,6 +2,7 @@ PATH
   remote: ../..
   specs:
     zombie_admin (0.0.1)
+      formtastic
       rails (~> 3.0)
 
 GEM
@@ -48,6 +49,10 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     ffi (1.0.9)
+    formtastic (1.2.4)
+      actionpack (>= 2.3.7)
+      activesupport (>= 2.3.7)
+      i18n (~> 0.4)
     i18n (0.5.0)
     json_pure (1.6.0)
     mail (2.2.19)

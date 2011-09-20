@@ -1,9 +1,32 @@
 <% content_for :heading do %>
   <h2><%= zombie_admin_resource.model_name.human.pluralize %></h2>
+  
+  <div class="actions">
+    <%= link_to zombie_admin_resource.human_link(:new), :action => :new %>
+  </div>
 <% end %>
 
 <%= render 'zombie_admin/scopes' if zombie_admin_resource.scopes.any? %>
-<%= render :partial => 'zombie_admin/resource', :collection => resources %>
+
+<table class="resources" id="resources_name">
+  <thead>
+    <tr>
+      <% zombie_admin_resource.index_columns.each do |column_name| %>
+        <th><%= zombie_admin_resource.klass.human_attribute_name(column_name) %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% resources.all.each do |resource| %>
+      <tr>
+        <% zombie_admin_resource.index_columns.each do |column_name| %>
+          <td>
+            <%= resource.send(column_name) %>
+          </td>
+        <% end %>
+    <% end %>
+  </tbody>
+</table>
 
 <% content_for :sidebar do %>
   <%= render 'zombie_admin/filters' %>

@@ -1,6 +1,7 @@
 require "zombie_admin/config"
 require "zombie_admin/routes"
 require "zombie_admin/resource"
+require "formtastic"
 
 module ZombieAdmin
   mattr_accessor :resources

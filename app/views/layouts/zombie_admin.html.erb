@@ -3,7 +3,7 @@
 <head>
   <title>ZombieAdmin - Administration engine for Ruby on Rails</title>
   <%= javascript_include_tag :defaults %>
-  <%= stylesheet_link_tag 'zombie_admin' %>
+  <%= stylesheet_link_tag 'zombie_admin', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -33,6 +33,7 @@
     <% if content_for?(:heading) %>
       <header id="heading">
         <%= yield :heading %>
+        <div class="clear"></div>
       </header>
     <% end %>
     

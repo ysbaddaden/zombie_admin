@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
   s.files = [
     "app/views/layouts/zombie_admin.html.erb",
     "app/views/zombie_admin/_filters.html.erb",
-    "app/views/zombie_admin/_resource.html.erb",
     "app/views/zombie_admin/_scopes.html.erb",
     "app/views/zombie_admin/index.html.erb",
+    "app/views/zombie_admin/new.html.erb",
     "app/views/zombie_admin/show.html.erb",
     "lib/zombie_admin.rb",
     "lib/zombie_admin/config.rb",
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/zombie_admin/resource/menu.rb",
     "lib/zombie_admin/resource/naming.rb",
     "lib/zombie_admin/resource/scope.rb",
+    "lib/zombie_admin/resource/scopes.rb",
     "lib/zombie_admin/routes.rb"
   ]
   s.homepage = %q{http://github.com/ysbaddaden/calliope}
@@ -41,11 +42,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rails>, ["~> 3.0"])
+      s.add_runtime_dependency(%q<formtastic>, [">= 0"])
     else
       s.add_dependency(%q<rails>, ["~> 3.0"])
+      s.add_dependency(%q<formtastic>, [">= 0"])
     end
   else
     s.add_dependency(%q<rails>, ["~> 3.0"])
+    s.add_dependency(%q<formtastic>, [">= 0"])
   end
 end
 

@@ -1,9 +1,13 @@
 en:
-  zombie_admin:
+  zombieadmin:
     menus:
       blog: "Blogs"
       post: "Posts"
-
+    links:
+      new: "New %{model_name}"
+      edit: "Edit %{model_name}"
+      destroy: "Delete %{model_name}"
+  
   zombie_admin:
     filters:
       heading: "Filters"

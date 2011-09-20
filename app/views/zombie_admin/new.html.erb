@@ -1,0 +1,18 @@
+<% content_for :heading do %>
+  <h2><%= zombie_admin_resource.model_name.human.pluralize %></h2>
+<% end %>
+
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= zombie_admin_resource.form_columns.each do |column_name| %>
+    <%= f.input column_name %>
+  <% end %>
+  
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render 'zombie_admin/filters' %>
+<% end %>
+

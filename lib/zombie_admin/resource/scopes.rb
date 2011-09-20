@@ -11,7 +11,7 @@ module ZombieAdmin
       scope = Scope.new(resource, name, options)
       self << scope
       @scopes ||= {}
-      @scopes[name] = scope
+      @scopes[name.to_s] = scope
       @default_scope = scope if scope.default?
     end
 

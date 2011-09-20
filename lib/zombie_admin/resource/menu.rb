@@ -8,7 +8,7 @@ module ZombieAdmin
     end
 
     def title
-      I18n.t(resource.model_name.i18n_key, :scope => 'zombie_admin.menus',
+      I18n.t(resource.model_name.i18n_key, :scope => 'zombieadmin.menus',
         :default => resource.model_name.human.pluralize)
     end
 

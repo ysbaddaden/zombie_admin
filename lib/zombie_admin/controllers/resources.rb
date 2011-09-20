@@ -12,16 +12,17 @@ module ZombieAdmin
 
       def show
         self.resource = scoped_collection.find(params[:id])
-        respond_with(resource)
+        respond_with(resource, :responder => Responder)
       end
 
       def new
         self.resource = resource_klass.new
-        respond_with(resource)
+        respond_with(resource, :responder => Responder)
       end
 
       def edit
         self.resource = scoped_collection.find(params[:id])
+        respond_with(resource, :responder => Responder)
       end
 
       def create

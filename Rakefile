@@ -52,7 +52,7 @@ begin
     gem.files = root_files + FileList["{lib}/*"] + FileList["{lib}/**/*"] + FileList["{app}/*"] + FileList["{app}/**/*"]
     gem.extra_rdoc_files = root_files
     gem.add_dependency 'rails', '~> 3.0'
-#    gem.add_dependency 'commentable'
+    gem.add_dependency 'formtastic'
   end
 
   Jeweler::GemcutterTasks.new
