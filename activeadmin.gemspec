@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.files = [
     "app/views/active_admin/_filters.html.erb",
     "app/views/active_admin/_resource.html.erb",
+    "app/views/active_admin/_scopes.html.erb",
     "app/views/active_admin/index.html.erb",
     "app/views/active_admin/show.html.erb",
     "app/views/layouts/active_admin.html.erb",
@@ -27,6 +28,7 @@ Gem::Specification.new do |s|
     "lib/active_admin/resource/dsl.rb",
     "lib/active_admin/resource/menu.rb",
     "lib/active_admin/resource/naming.rb",
+    "lib/active_admin/resource/scope.rb",
     "lib/active_admin/routes.rb",
     "lib/activeadmin.rb"
   ]
@@ -35,12 +37,6 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Administration engine for Ruby on Rails.}
   s.test_files = [
-    "test/functional/blogs_controller_test.rb",
-    "test/functional/comments_controller_test.rb",
-    "test/functional/posts_controller_test.rb",
-    "test/functional/routes_test.rb",
-    "test/integration/blogs_test.rb",
-    "test/integration/posts_test.rb",
     "test/rails_app/app/admin/blogs.rb",
     "test/rails_app/app/admin/posts.rb",
     "test/rails_app/app/controllers/admin/dashboard_controller.rb",
