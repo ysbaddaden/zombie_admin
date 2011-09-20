@@ -1,0 +1,24 @@
+header, footer, article, section { display: block; }
+
+body { margin: 0; font: normal normal 14px/1.5 Helvetica, Arial, sans-serif; }
+
+a { text-decoration: none; }
+
+#header { background: #6A7176; color: #CDCDCD; padding: 8px 30px; text-shadow: 0 1px #333; }
+#header a { color: #CDCDCD; }
+#header h1, #header nav, #header ul, #header li {
+  display: inline; font-size: inherit; margin: 0; padding: 0;
+  font-weight: normal;
+}
+#header li { margin-left: 12px; font-size: 12px; }
+#header li.selected { font-weight: bold; color: #FFF; }
+
+#heading { background: #EFEFEF; color: #5E6469; padding: 4px 30px 0;
+  border-bottom: 1px solid #FFF; box-shadow: 0 0 4px #888; }
+#heading h2 { margin: 0; font: inherit; font-size: 32px; font-weight: bold; text-shadow: 0 1px #FFF; }
+
+#content { margin: 30px 300px 0 3px; }
+#sidebar { float: right; width: 270px; margin-left: -270px; }
+
+.clear { clear: both; }
+

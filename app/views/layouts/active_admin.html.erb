@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ActiveAdmin - Administration engine for Ruby on Rails</title>
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'active_admin' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <header id="header">
+    <h1><%= ActiveAdmin.config.site_name %></h1>
+    <nav>
+      <ul id="nav">
+        <li><%= link_to_unless_current t('active_admin.menus.dashboard'), admin_root_path %></li>
+        <% ActiveAdmin.menus.each do |menu| %>
+          <% if menu.display? %>
+            <% if current_resource?(menu.resource) %>
+              <li class="selected">
+                <%= link_to_unless_current menu.title, [:admin, menu.resource.model_name.plural] %>
+              </li>
+            <% else %>
+              <li>
+                <%= link_to menu.title, [:admin, menu.resource.model_name.plural] %>
+              </li>
+            <% end %>
+          <% end %>
+        <% end %>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main">
+    <% if content_for?(:heading) %>
+      <header id="heading">
+        <%= yield :heading %>
+      </header>
+    <% end %>
+    
+    <section id="content">
+      <%= yield %>
+    </section>
+
+    <% if content_for?(:sidebar) %>
+      <aside id="sidebar">
+        <%= yield :sidebar %>
+      </aside>
+    <% end %>
+    
+    <div class="clear"></div>
+  </div>
+</body>
+</html>

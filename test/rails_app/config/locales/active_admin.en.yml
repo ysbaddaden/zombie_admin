@@ -1,0 +1,10 @@
+en:
+  activeadmin:
+    menus:
+      blog: "Blogs"
+      post: "Posts"
+
+  active_admin:
+    filters:
+      heading: "Filters"
+

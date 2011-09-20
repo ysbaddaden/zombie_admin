@@ -1,0 +1,11 @@
+<% content_for :heading do %>
+  <h2><%= active_admin_resource.model_name.human.pluralize %></h2>
+<% end %>
+
+<%= render 'active_admin/scopes' if active_admin_resource.scopes.any? %>
+<%= render :partial => 'active_admin/resource', :collection => resources %>
+
+<% content_for :sidebar do %>
+  <%= render 'active_admin/filters' %>
+<% end %>
+
