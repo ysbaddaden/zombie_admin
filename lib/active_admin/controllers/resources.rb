@@ -1,4 +1,4 @@
-module ActiveAdmin
+module ZombieAdmin
   module Controllers
     class Resources < Application
       before_filter :load_resources, :if => :load_resources?
@@ -51,7 +51,7 @@ module ActiveAdmin
 
       def collection
         collection = resource_klass
-        collection.send(active_admin_resource.scopes[params[:scope]].method) if params[:scope]
+        collection.send(zombie_admin_resource.scopes[params[:scope]].method) if params[:scope]
         collection
       end
     end

@@ -1,4 +1,4 @@
-ActiveAdmin.register Blog do
+ZombieAdmin.register Blog do
   menu false
 
   actions :edit, :update

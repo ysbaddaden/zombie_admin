@@ -1,32 +1,32 @@
-module ActiveAdmin
+module ZombieAdmin
   module Controllers
     class Application < ::ApplicationController
       respond_to :html, :xml, :json, :csv
 
-      layout 'active_admin'
+      layout 'zombie_admin'
       append_view_path(File.expand_path('../../../../app/views', __FILE__))
 
-      helper_method :current_resource?, :active_admin_resource,
+      helper_method :current_resource?, :zombie_admin_resource,
         :resource_klass, :resources_name, :resource_name, :resources, :resource
 
       def current_resource?(resource)
         controller_path == "admin/" + resource.controller_name
       end
 
-      def active_admin_resource
-        ActiveAdmin.resources[controller_name]
+      def zombie_admin_resource
+        ZombieAdmin.resources[controller_name]
       end
 
       def resource_klass
-        active_admin_resource.klass
+        zombie_admin_resource.klass
       end
 
       def resource_name
-        active_admin_resource.model_name.singular
+        zombie_admin_resource.model_name.singular
       end
 
       def resources_name
-        active_admin_resource.model_name.plural
+        zombie_admin_resource.model_name.plural
       end
 
       def resource
@@ -46,11 +46,11 @@ module ActiveAdmin
       end
 
       def load_resources?
-        !active_admin_resource.collection_actions[action_name].nil?
+        !zombie_admin_resource.collection_actions[action_name].nil?
       end
 
       def load_resource?
-        !active_admin_resource.member_actions[action_name].nil?
+        !zombie_admin_resource.member_actions[action_name].nil?
       end
 
       def load_resources

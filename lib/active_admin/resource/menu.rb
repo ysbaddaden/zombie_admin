@@ -1,4 +1,4 @@
-module ActiveAdmin
+module ZombieAdmin
   class Menu
     attr_reader :resource, :options
 
@@ -8,7 +8,7 @@ module ActiveAdmin
     end
 
     def title
-      I18n.t(resource.model_name.i18n_key, :scope => 'activeadmin.menus',
+      I18n.t(resource.model_name.i18n_key, :scope => 'zombie_admin.menus',
         :default => resource.model_name.human.pluralize)
     end
 

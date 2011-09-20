@@ -1,4 +1,4 @@
-module ActiveAdmin
+module ZombieAdmin
   class Scope
     attr_reader :name, :options
 

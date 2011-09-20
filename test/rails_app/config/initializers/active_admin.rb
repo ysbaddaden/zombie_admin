@@ -1,3 +1,3 @@
-ActiveAdmin.config do |config|
+ZombieAdmin.config do |config|
   config.site_name = "Zombie Admin"
 end

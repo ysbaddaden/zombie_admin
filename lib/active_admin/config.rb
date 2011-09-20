@@ -1,4 +1,4 @@
-module ActiveAdmin
+module ZombieAdmin
   module Config
     mattr_accessor :site_name
 

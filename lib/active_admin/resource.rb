@@ -1,8 +1,8 @@
-require "active_admin/resource/dsl"
-require "active_admin/resource/scope"
-require "active_admin/resource/menu"
+require "zombie_admin/resource/dsl"
+require "zombie_admin/resource/scope"
+require "zombie_admin/resource/menu"
 
-module ActiveAdmin
+module ZombieAdmin
   class Action
     attr_reader :method, :name, :block
 
@@ -46,7 +46,7 @@ module ActiveAdmin
       def build_controller
         eval <<-EOV
           module ::Admin
-            class #{controller_name.camelize}Controller < ::ActiveAdmin::Controllers::Resources
+            class #{controller_name.camelize}Controller < ::ZombieAdmin::Controllers::Resources
             end
           end
         EOV

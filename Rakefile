@@ -4,7 +4,7 @@ require 'rake/rdoctask'
 
 task :default => :test
 
-desc 'Test the ActiveAdmin engine.'
+desc 'Test the ZombieAdmin engine.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'test'
   t.pattern = 'test/**/*_test.rb'
@@ -30,7 +30,7 @@ Rake::TestTask.new(:"test:integration") do |t|
 end
 
 Rake::RDocTask.new do |rdoc|
-  rdoc.title = "ActiveAdmin"
+  rdoc.title = "ZombieAdmin"
   rdoc.main = "README.rdoc"
   rdoc.rdoc_dir = "doc"
   rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb")
@@ -42,7 +42,7 @@ begin
 
   Jeweler::Tasks.new do |gem|
     root_files = FileList["README.rdoc"]
-    gem.name = "activeadmin"
+    gem.name = "zombie_admin"
     gem.version = "0.0.1"
     gem.summary = "Administration engine for Ruby on Rails."
     gem.email = "ysbaddaden@gmail.com"

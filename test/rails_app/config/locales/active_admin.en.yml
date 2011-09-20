@@ -1,10 +1,10 @@
 en:
-  activeadmin:
+  zombie_admin:
     menus:
       blog: "Blogs"
       post: "Posts"
 
-  active_admin:
+  zombie_admin:
     filters:
       heading: "Filters"
 

@@ -1,4 +1,4 @@
-module ActiveAdmin
+module ZombieAdmin
   class DSL
     attr_reader :resource
 

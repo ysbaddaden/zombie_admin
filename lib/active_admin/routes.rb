@@ -1,11 +1,11 @@
 module ActionDispatch # :nodoc:
   module Routing # :nodoc:
     class Mapper
-      def active_admin(*args)
-        ActiveAdmin.load_resources!
+      def zombie_admin(*args)
+        ZombieAdmin.load_resources!
         
         namespace :admin do
-          ActiveAdmin.resources.each_value do |r|
+          ZombieAdmin.resources.each_value do |r|
             resources r.model_name.plural, :only => r.actions do
               member do
                 r.member_actions.each_value { |a| send(a.method, a.name) }

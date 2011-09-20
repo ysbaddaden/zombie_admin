@@ -1,4 +1,4 @@
-#module ActiveAdmin
+#module ZombieAdmin
 #  class Naming
 #    attr_reader :name
 #    delegate :singular, :plural, :route_key, :param_key, :i18n_key, :to => :name
@@ -16,7 +16,7 @@
 #    end
 
 #    def human(options = {})
-#      options[:scope] = "active_admin.resources"
+#      options[:scope] = "zombie_admin.resources"
 #      I18n.t(name.i18n_key, options)
 #    end
 

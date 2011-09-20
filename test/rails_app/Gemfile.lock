@@ -1,7 +1,7 @@
 PATH
   remote: ../..
   specs:
-    activeadmin (0.0.1)
+    zombie_admin (0.0.1)
       rails (~> 3.0)
 
 GEM
@@ -98,7 +98,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin!
+  zombie_admin!
   capybara
   rails (= 3.0.10)
   sqlite3

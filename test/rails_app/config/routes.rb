@@ -1,4 +1,4 @@
 RailsApp::Application.routes.draw do
-  active_admin
+  zombie_admin
   root :to => redirect("/admin")
 end

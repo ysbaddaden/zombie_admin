@@ -1,6 +1,6 @@
 module Admin
-  class DashboardController < ActiveAdmin::Controllers::Application
-    layout 'active_admin'
+  class DashboardController < ZombieAdmin::Controllers::Application
+    layout 'zombie_admin'
 
     def index
     end

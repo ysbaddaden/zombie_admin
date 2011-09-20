@@ -1,5 +1,5 @@
 <ul id="scopes">
-  <% active_admin_resource.scopes.each_value do |scope| %>
+  <% zombie_admin_resource.scopes.each_value do |scope| %>
     <% if scope.display? %>
       <% if scope.name.to_s == "all" %>
         <li><%= link_to scope.name, :scope => nil %></li>

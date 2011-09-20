@@ -1,1 +1,1 @@
-require File.expand_path('../active_admin', __FILE__)
+require File.expand_path('../zombie_admin', __FILE__)
