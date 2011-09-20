@@ -2,7 +2,7 @@
   <h2><%= zombie_admin_resource.model_name.human.pluralize %></h2>
 <% end %>
 
-<%= render 'zombie_admin/scopes' if active_admin_resource.scopes.any? %>
+<%= render 'zombie_admin/scopes' if zombie_admin_resource.scopes.any? %>
 <%= render :partial => 'zombie_admin/resource', :collection => resources %>
 
 <% content_for :sidebar do %>

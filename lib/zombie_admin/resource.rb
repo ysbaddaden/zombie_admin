@@ -1,4 +1,5 @@
 require "zombie_admin/resource/dsl"
+require "zombie_admin/resource/scopes"
 require "zombie_admin/resource/scope"
 require "zombie_admin/resource/menu"
 
@@ -25,7 +26,7 @@ module ZombieAdmin
       @actions = [ :index, :show, :new, :edit, :create, :update, :destroy ]
       @member_actions = {}
       @collection_actions = {}
-      @scopes = []
+      @scopes = Scopes.new(self)
       @filters = []
       build_controller
     end

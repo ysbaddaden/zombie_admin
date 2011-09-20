@@ -1,5 +1,5 @@
 ZombieAdmin.register Post do
   scope :all
   scope :published
-  scope :unpublished, :private
+  scope :unpublished
 end

@@ -13,55 +13,28 @@ Gem::Specification.new do |s|
   s.description = %q{Administration engine for Ruby on Rails.}
   s.email = %q{ysbaddaden@gmail.com}
   s.files = [
-    "app/views/active_admin/_filters.html.erb",
-    "app/views/active_admin/_resource.html.erb",
-    "app/views/active_admin/_scopes.html.erb",
-    "app/views/active_admin/index.html.erb",
-    "app/views/active_admin/show.html.erb",
-    "app/views/layouts/active_admin.html.erb",
-    "lib/active_admin.rb",
-    "lib/active_admin/config.rb",
-    "lib/active_admin/controllers/application.rb",
-    "lib/active_admin/controllers/resources.rb",
-    "lib/active_admin/controllers/responder.rb",
-    "lib/active_admin/resource.rb",
-    "lib/active_admin/resource/dsl.rb",
-    "lib/active_admin/resource/menu.rb",
-    "lib/active_admin/resource/naming.rb",
-    "lib/active_admin/resource/scope.rb",
-    "lib/active_admin/routes.rb",
-    "lib/activeadmin.rb"
+    "app/views/layouts/zombie_admin.html.erb",
+    "app/views/zombie_admin/_filters.html.erb",
+    "app/views/zombie_admin/_resource.html.erb",
+    "app/views/zombie_admin/_scopes.html.erb",
+    "app/views/zombie_admin/index.html.erb",
+    "app/views/zombie_admin/show.html.erb",
+    "lib/zombie_admin.rb",
+    "lib/zombie_admin/config.rb",
+    "lib/zombie_admin/controllers/application.rb",
+    "lib/zombie_admin/controllers/resources.rb",
+    "lib/zombie_admin/controllers/responder.rb",
+    "lib/zombie_admin/resource.rb",
+    "lib/zombie_admin/resource/dsl.rb",
+    "lib/zombie_admin/resource/menu.rb",
+    "lib/zombie_admin/resource/naming.rb",
+    "lib/zombie_admin/resource/scope.rb",
+    "lib/zombie_admin/routes.rb"
   ]
   s.homepage = %q{http://github.com/ysbaddaden/calliope}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Administration engine for Ruby on Rails.}
-  s.test_files = [
-    "test/rails_app/app/admin/blogs.rb",
-    "test/rails_app/app/admin/posts.rb",
-    "test/rails_app/app/controllers/admin/dashboard_controller.rb",
-    "test/rails_app/app/controllers/application_controller.rb",
-    "test/rails_app/app/helpers/application_helper.rb",
-    "test/rails_app/app/models/blog.rb",
-    "test/rails_app/app/models/comment.rb",
-    "test/rails_app/app/models/post.rb",
-    "test/rails_app/config/application.rb",
-    "test/rails_app/config/boot.rb",
-    "test/rails_app/config/environment.rb",
-    "test/rails_app/config/environments/development.rb",
-    "test/rails_app/config/environments/production.rb",
-    "test/rails_app/config/environments/test.rb",
-    "test/rails_app/config/initializers/active_admin.rb",
-    "test/rails_app/config/initializers/secret_token.rb",
-    "test/rails_app/config/initializers/session_store.rb",
-    "test/rails_app/config/routes.rb",
-    "test/rails_app/db/migrate/20110416154842_create_blogs.rb",
-    "test/rails_app/db/migrate/20110416154847_create_posts.rb",
-    "test/rails_app/db/migrate/20110417162758_create_comments.rb",
-    "test/rails_app/db/schema.rb",
-    "test/rails_app/db/seeds.rb",
-    "test/test_helper.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

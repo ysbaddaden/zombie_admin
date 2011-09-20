@@ -98,7 +98,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  zombie_admin!
   capybara
   rails (= 3.0.10)
   sqlite3
+  zombie_admin!

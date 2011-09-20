@@ -1,0 +1,15 @@
+<ul id="scopes">
+  <% zombie_admin_resource.scopes.each do |scope| %>
+    <% if scope.display? %>
+      <% if scope.name == params[:scope] %>
+        <li class="selected">
+          <%= scope.human_name %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to scope.human_name, :scope => scope.name %>
+        </li>
+      <% end %>
+    <% end %>
+  <% end %>
+</ul>

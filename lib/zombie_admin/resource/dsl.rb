@@ -7,8 +7,8 @@ module ZombieAdmin
       instance_eval(&block)
     end
 
-    def scope(name, method = nil, options = {})
-      @resource.scopes << Scope.new(name, method, options)
+    def scope(name, options = {})
+      @resource.scopes.add(name, options)
     end
 
     def menu(options)

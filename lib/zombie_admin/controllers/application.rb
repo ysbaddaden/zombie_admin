@@ -34,7 +34,7 @@ module ZombieAdmin
       end
 
       def resource=(value)
-        instance_variable_get(:"@#{resource_name}", value)
+        instance_variable_set(:"@#{resource_name}", value)
       end
 
       def resources()
@@ -42,7 +42,7 @@ module ZombieAdmin
       end
 
       def resources=(value)
-        instance_variable_get(:"@#{resources_name}", value)
+        instance_variable_set(:"@#{resources_name}", value)
       end
 
       def load_resources?

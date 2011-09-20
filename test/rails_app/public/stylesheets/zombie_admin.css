@@ -1,7 +1,7 @@
 header, footer, article, section { display: block; }
+.clear { clear: both; }
 
-body { margin: 0; font: normal normal 14px/1.5 Helvetica, Arial, sans-serif; }
-
+body { margin: 0; font: normal normal 14px/1.5 Helvetica, Arial, sans-serif; color: #666; }
 a { text-decoration: none; }
 
 #header { background: #6A7176; color: #CDCDCD; padding: 8px 30px; text-shadow: 0 1px #333; }
@@ -17,8 +17,9 @@ a { text-decoration: none; }
   border-bottom: 1px solid #FFF; box-shadow: 0 0 4px #888; }
 #heading h2 { margin: 0; font: inherit; font-size: 32px; font-weight: bold; text-shadow: 0 1px #FFF; }
 
-#content { margin: 30px 300px 0 3px; }
+#content { margin: 30px 300px 0 30px; }
 #sidebar { float: right; width: 270px; margin-left: -270px; }
 
-.clear { clear: both; }
+#scopes { list-style: none; padding: 0; font-size: 12px; }
+#scopes li { display: inline; margin-right: 12px; }
 
