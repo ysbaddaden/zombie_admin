@@ -13,24 +13,24 @@ Gem::Specification.new do |s|
   s.description = %q{Administration engine for Ruby on Rails.}
   s.email = %q{ysbaddaden@gmail.com}
   s.files = [
-    "app/views/zombie_admin/_filters.html.erb",
-    "app/views/zombie_admin/_resource.html.erb",
-    "app/views/zombie_admin/_scopes.html.erb",
-    "app/views/zombie_admin/index.html.erb",
-    "app/views/zombie_admin/show.html.erb",
-    "app/views/layouts/zombie_admin.html.erb",
-    "lib/zombie_admin.rb",
-    "lib/zombie_admin/config.rb",
-    "lib/zombie_admin/controllers/application.rb",
-    "lib/zombie_admin/controllers/resources.rb",
-    "lib/zombie_admin/controllers/responder.rb",
-    "lib/zombie_admin/resource.rb",
-    "lib/zombie_admin/resource/dsl.rb",
-    "lib/zombie_admin/resource/menu.rb",
-    "lib/zombie_admin/resource/naming.rb",
-    "lib/zombie_admin/resource/scope.rb",
-    "lib/zombie_admin/routes.rb",
-    "lib/zombie_admin.rb"
+    "app/views/active_admin/_filters.html.erb",
+    "app/views/active_admin/_resource.html.erb",
+    "app/views/active_admin/_scopes.html.erb",
+    "app/views/active_admin/index.html.erb",
+    "app/views/active_admin/show.html.erb",
+    "app/views/layouts/active_admin.html.erb",
+    "lib/active_admin.rb",
+    "lib/active_admin/config.rb",
+    "lib/active_admin/controllers/application.rb",
+    "lib/active_admin/controllers/resources.rb",
+    "lib/active_admin/controllers/responder.rb",
+    "lib/active_admin/resource.rb",
+    "lib/active_admin/resource/dsl.rb",
+    "lib/active_admin/resource/menu.rb",
+    "lib/active_admin/resource/naming.rb",
+    "lib/active_admin/resource/scope.rb",
+    "lib/active_admin/routes.rb",
+    "lib/activeadmin.rb"
   ]
   s.homepage = %q{http://github.com/ysbaddaden/calliope}
   s.require_paths = ["lib"]
@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
     "test/rails_app/config/environments/development.rb",
     "test/rails_app/config/environments/production.rb",
     "test/rails_app/config/environments/test.rb",
-    "test/rails_app/config/initializers/zombie_admin.rb",
+    "test/rails_app/config/initializers/active_admin.rb",
     "test/rails_app/config/initializers/secret_token.rb",
     "test/rails_app/config/initializers/session_store.rb",
     "test/rails_app/config/routes.rb",
